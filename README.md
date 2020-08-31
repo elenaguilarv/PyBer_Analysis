@@ -1,13 +1,13 @@
 # Pyber_Analysis
 
 ## Objective
-The purpose behind this analysis is to dive into the key metrics for Pyber, a ride-sharing application, and explore what type of city has the most rides and how each city type compares against the total fares, both the cost of rides and what the driver earns. The ride-sharing dataset is filtered to the first quarter of 2019 in order to visualize clear trends between the different city types and cost of rides in USD.
+The purpose behind this analysis is to dive into the key metrics for Pyber, a ride-sharing application. This analysis explores what type of city has the most rides and how each city type compares against the total fares, both the cost of rides and what the driver earns. The ride-sharing dataset is filtered to the first quarter of 2019 in order to visualize clear trends between the different city types and cost of rides in USD.
 
-To prepare, the datasets providing city and ride information were first merged on a common column. This allowed for the key statistics to be summarized in a dataframe using the function "groupby" to obtain rides, drivers, and fares by city type. The output of summary metrics below shows that there is more activity in urban zones, hence more drivers and competition for customers. Urban drivers make less than those operating in rural zones, where the activity is lower but wages increase due to less competition. Regardless of the higher pay for drivers in rural areas, it is possible that they can make more money in a shorter amount of time working in urban areas. This would be a good point for further analysis.
+To prepare, the datasets providing city and ride information were first merged on a common column. This allowed for the key numbers to be summarized in a dataframe using the function "groupby" to obtain rides, drivers, and fares specifically by city type. The output of summary metrics below shows that there is more activity in urban zones, hence more drivers and competition for customers. Urban drivers make less than those operating in rural zones, where the activity is lower but wages increase due to less competition. Regardless of the higher pay for drivers in rural areas, it could be argued that they make more money in a shorter amount of time and with less gas mileage working in urban areas. This would be a good point for further analysis.
 
 ![alt text](https://github.com/elenaguilarv/PyBer_Analysis/blob/master/Summarydf.PNG)
 
-Overall, operating in urban zones is better for customers in need of getting around, drivers looking for quick work, and Pyber's business. Urban areas show a significantly larger number of available drivers and this also accommodates the larger population. 
+Overall, operating in urban zones is better for customers in need of getting around, drivers looking for quick work, and Pyber's business. Urban areas show a significantly larger number of available drivers and this also accommodates the larger populations.
 
 ![alt text](https://github.com/elenaguilarv/PyBer_Analysis/blob/master/Challenge_fares_summary.png)
 
