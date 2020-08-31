@@ -1,22 +1,18 @@
 # Pyber_Analysis
 
 ## Objective
-The purpose behind this analysis is to dive into the key metrics for Pyber, a ride-sharing application. This analysis explores what type of city has the most rides and how each city type compares against the total fares, both the cost of rides and what the driver earns. The ride-sharing dataset is resampled to the first quarter of 2019 in order to visualize trends between the different city types and cost of rides in USD.
+The purpose behind this analysis is to dive into the key metrics for Pyber, a ride-sharing application, and explore what type of city has the most rides and how each city type compares against the total fares, both the cost of rides and what the driver earns. The ride-sharing dataset is filtered to the first quarter of 2019 in order to visualize clear trends between the different city types and cost of rides in USD.
 
-To prepare this analysis the datasets providing city and ride information were first merged on a common column, "city". This allowed a dataframe a key statistics using the function "groupby" to obtain rides, drivers, and fares by city type. The output of summary metrics below shows that there is more activity in urban zones, hence more drivers and competition for customers. Drivers get paid considerably less than those operating in rural zones, where the activity is lower but wages increase due to less competition. Regardless of the higher pay for drivers in rural areas, chances are they can make more money in a shorter amount of time working in urban areas. 
+To prepare, the datasets providing city and ride information were first merged on a common column. This allowed for the key statistics to be summarized in a dataframe using the function "groupby" to obtain rides, drivers, and fares by city type. The output of summary metrics below shows that there is more activity in urban zones, hence more drivers and competition for customers. Urban drivers make less than those operating in rural zones, where the activity is lower but wages increase due to less competition. Regardless of the higher pay for drivers in rural areas, it is possible that they can make more money in a shorter amount of time working in urban areas. This would be a good point for further analysis.
 
 ![alt text](https://github.com/elenaguilarv/PyBer_Analysis/blob/master/Summarydf.PNG)
 
-Overall, operating in urban zones is better for customers, drivers, and Pyber. Urban areas show a significantly larger number of available drivers and this can accommodate the larger population. 
+Overall, operating in urban zones is better for customers in need of getting around, drivers looking for quick work, and Pyber's business. Urban areas show a significantly larger number of available drivers and this also accommodates the larger population. 
 
 ![alt text](https://github.com/elenaguilarv/PyBer_Analysis/blob/master/Challenge_fares_summary.png)
 
 ## Challenges
-
+Preparing the dataset for a line plot needed a few tricks. It was important to be mindful of the structure of the pivot table. In order to create the line plot, the original dataframe had to take on a different presentation. The date had to become the index, city types were converted to the columns and the fares were changed to the values. When the fares between January and April of 2019 were located, some showed "NaN", but once it was resampled to "W" meaning weekly fares, all of the values returned.
 
 ## Recommendations
-A dataset showing the average amount of rides a driver gives and what is earned by city type would provide this analysis more room for discussing the.
-
-Based on the data from the different city types, what recommendations would you give the CEO for addressing any disparities among the city types?
-Provide two additional analyses you could do to gain more insight into the data, like using other datasets.
-What technical steps would you take to perform the additional analyses?
+As referenced above, data on the average amount of rides a driver completes in day, where, and what they earn on average would provide this analysis more room for discussion. In general urban areas give Pyber more value. Redesigning this analysis to different times of the year-- during holidays, back-to-school season, or festivals, could show new insights. These events have a big impact on ride-share activity and they do not always occur in urban areas. Obtainining information on festivals and city events throughout the year, such as dates and total attendees, could help Pyber scale up their driver pool prior to them happening. 
